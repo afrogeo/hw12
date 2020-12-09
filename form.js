@@ -35,6 +35,7 @@ http.createServer(function(req,res) {
                                 items[i].Ticker + "</h2>");
                             }
                         }
+                        res.end();
                     }
                     db.close();
                 });
@@ -63,12 +64,13 @@ http.createServer(function(req,res) {
                                 items[i].Ticker + "<h2>");
                             }
                         }
+                        res.end();
                     }
                     db.close();
                 });
                 console.log("Success!");
         });      
     }
-        res.end();
+        
 
 }).listen(port);
