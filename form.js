@@ -31,7 +31,7 @@ http.createServer(function(req,res) {
                         } else {
                             res.write("<h2> Companies found: </h2><br>");
                             for (i=0;i<items.length;i++) {
-                                res.write("<hp> - Company: " + items[i].Company + " // Sticker: " +
+                                res.write("<hp> - Company: " + items[i].Company + " // Ticker: " +
                                 items[i].Ticker + "</p><br>");
                             }
                         }
