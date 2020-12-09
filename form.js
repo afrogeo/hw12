@@ -29,10 +29,10 @@ http.createServer(function(req,res) {
                         if (items.length == 0) {
                             res.write("<h2> No company " + company + " found! </h2>");
                         } else {
-                            res.write("<h2> Companies: ");
+                            res.write("<h2> Companies found: </h2><br>");
                             for (i=0;i<items.length;i++) {
-                                res.write(i + ": " + items[i].Company + "StickeR: " +
-                                items[i].Ticker + "</h2>");
+                                res.write("<h1> - Company: " + items[i].Company + " // Sticker: " +
+                                items[i].Ticker + "</h1><br>");
                             }
                         }
                         res.end();
@@ -58,10 +58,10 @@ http.createServer(function(req,res) {
                         if (items.length == 0) {
                             res.write("<h2> No companies with ticker " + ticker + " found! </h2>");
                         } else {
-                            res.write("<h2> Companies: ");
+                            res.write("<h2> Companies found: </h2> <br>");
                             for (i=0;i<items.length;i++) {
-                                res.write(i + ": " + items[i].Company + " StickeR: " +
-                                items[i].Ticker + "<h2>");
+                                res.write("<h1> - Company: " + items[i].Company + " // Ticker: " +
+                                items[i].Ticker + "</h1><br>");
                             }
                         }
                         res.end();
