@@ -69,5 +69,6 @@ http.createServer(function(req,res) {
                 console.log("Success!");
         });      
     }
+        res.end();
 
 }).listen(port);
