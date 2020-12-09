@@ -1,10 +1,10 @@
 {
-    "name": "helloapp",
+    "name": "hw12",
     "version": "1.0.0",
     "description": "node app",
-    "main": "helloApp.js",
+    "main": "form.js",
     "scripts": {
-        "start": "node helloApp.js"
+        "start": "node form.js"
     },
     "repository": {
         "type": "git",
